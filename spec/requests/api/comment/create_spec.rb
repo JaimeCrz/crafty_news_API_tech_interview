@@ -11,7 +11,9 @@ RSpec.describe 'GET /api/comments', type: :request do
       post '/api/comments',
       params: {
         body: 'whello there people!',
-        article_id: article.id
+        article_id: article.id,
+        user_id: user.id
+
        },
        headers: user_headers
     end
@@ -36,7 +38,9 @@ RSpec.describe 'GET /api/comments', type: :request do
       post '/api/comments',
       params: {
         body: 'whello there people twoooo!',
-        article_id: another_article.id
+        article_id: another_article.id,
+        user_id: another_user.id
+
        },
        headers: another_user_headers
     end
