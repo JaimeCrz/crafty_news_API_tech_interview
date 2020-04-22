@@ -1,4 +1,5 @@
 class Api::CommentsController < ApplicationController
+  before_action :authenticate_user!, only: :create
 
   def index
     comments = Comment.all
@@ -19,6 +20,6 @@ class Api::CommentsController < ApplicationController
   private
 
   def comments_params
-   params.permit(:body, :article_id, :created_at, :updated_at)
+   params.permit(:body, :article_id, :created_at, :updated_at, :user_id)
   end
 end

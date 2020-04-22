@@ -1,6 +1,7 @@
 FactoryBot.define do
   factory :comment do
     body { "MyString" }
-    article
+   article
+   user
   end
 end
