@@ -1,4 +1,5 @@
 class Api::CommentsController < ApplicationController
+  before_action :authenticate_user!, only: :create
 
   def index
     comments = Comment.all
