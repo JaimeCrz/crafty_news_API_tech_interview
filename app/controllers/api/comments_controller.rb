@@ -5,5 +5,8 @@ class Api::CommentsController < ApplicationController
     
     render json: {comments: comments}
   end
-  
+
+  def create
+    binding.pry    
+  end
 end
