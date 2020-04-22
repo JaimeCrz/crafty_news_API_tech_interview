@@ -1,6 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe Article, type: :model do
+
+  it 'should have valid factory' do
+    expect(create(:article)).to be_valid
+  end
+
   describe "Articles has db columns" do
     it { is_expected.to have_db_column :title }
     it { is_expected.to have_db_column :body }
