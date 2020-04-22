@@ -26,6 +26,7 @@ RSpec.describe 'GET /api/comments', type: :request do
   end
 
   describe 'Unsuccessfully' do
+    
     let!(:another_user) { create(:user, email: "another@mail.com")}
     let(:another_user_headers)  {{HTTP_ACCEPT: 'application/json'}}
     let!(:another_article) { create(:article)}
