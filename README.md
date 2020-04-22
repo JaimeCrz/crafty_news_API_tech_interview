@@ -21,4 +21,7 @@ Tasks:
 You need to fork the repository and clone the forked repository to your computer. Then you need to branch off from the development branch. When you feel that you are done, you need to create a pull request towards the upstream repository. Make sure that the PR contains the correct information. The user story and what changes that are proposed in the PR.
 
 
+
 Good luck!
+
+By Jaime Cruz
